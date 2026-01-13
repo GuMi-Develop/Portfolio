@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link
       rel="shortcut icon"
       href="static/image/logo1.png"
@@ -45,8 +48,9 @@
     <main>
       <section id="about">
         <div class="about">
-          <div>
+          <div class="about-img">
             <img src="static/image/about.png" alt="about me" />
+            <span>ОБО МНЕ</span>
           </div>
           <div class="about-txt">
             <span>
@@ -70,7 +74,8 @@
       <section id="stack">
         <div class="stack">
           <div class="stack-img">
-            <div><img src="static/image/stack.png" alt="stack" /></div>
+            <img src="static/image/stack.png" alt="stack" />
+            <span>СТЕК</span>
           </div>
           <div class="wrapper">
             <div class="stack-div python">
@@ -101,11 +106,106 @@
               <img src="static/image/postgre.png" alt="postgre" />POSTGRE
             </div>
           </div>
+          <div class="mobile-stack">
+            <div class="choice-stack">
+              <div class="choice">
+                <button class="left-stack">
+                  <img
+                    src="static/image/Polygon 2.png"
+                    alt="left choice arrow"
+                  />
+                </button>
+                <button class="right-stack">
+                  <img
+                    src="static/image/Polygon 1.png"
+                    alt="right shoice arrow"
+                  />
+                </button>
+              </div>
+              <div class="name-stack a">
+                <span class="front-m">FRONTEND</span>
+              </div>
+              <div class="name-stack b">
+                <span class="front-m">BACKEND</span>
+              </div>
+              <div class="name-stack c">
+                <span class="front-m">ИСТРУМЕНТЫ</span>
+              </div>
+            </div>
+            <div class="stack-display a">
+              <div class="stack-m">
+                <span>HTML</span>
+                <progress value="90" max="100" class="progress">90%</progress>
+                <span class="procentage">90%</span>
+              </div>
+              <div class="stack-m">
+                <span>CSS</span>
+                <progress value="80" max="100" class="progress">80%</progress>
+                <span class="procentage">80%</span>
+              </div>
+              <div class="stack-m">
+                <span>JAVASCRIPT</span>
+                <progress value="50" max="100" class="progress">50%</progress>
+                <span class="procentage">50%</span>
+              </div>
+              <div class="stack-m">
+                <span>REACT</span>
+                <progress value="10" max="100" class="progress">10%</progress>
+                <span class="procentage">10%</span>
+              </div>
+            </div>
+            <div class="stack-display b">
+              <div class="stack-m">
+                <span>PYTHON</span>
+                <progress value="75" max="100" class="progress">75%</progress>
+                <span class="procentage">75%</span>
+              </div>
+              <div class="stack-m">
+                <span>NODE.JS</span>
+                <progress value="50" max="100" class="progress">50%</progress>
+                <span class="procentage">50%</span>
+              </div>
+              <div class="stack-m">
+                <span>POSTGRESQL</span>
+                <progress value="10" max="100" class="progress">10%</progress>
+                <span class="procentage">10%</span>
+              </div>
+              <div class="stack-m">
+                <span>RESTFUL APIS</span>
+                <progress value="0" max="100" class="progress">0%</progress>
+                <span class="procentage">0%</span>
+              </div>
+            </div>
+            <div class="stack-display c">
+              <div class="stack-m">
+                <span>GIT & GITHUB</span>
+                <progress value="95" max="100" class="progress">95%</progress>
+                <span class="procentage">95%</span>
+              </div>
+              <div class="stack-m">
+                <span>DOCKER</span>
+                <progress value="10" max="100" class="progress">10%</progress>
+                <span class="procentage">10%</span>
+              </div>
+              <div class="stack-m">
+                <span>LINUX</span>
+                <progress value="50" max="100" class="progress">50%</progress>
+                <span class="procentage">50%</span>
+              </div>
+              <div class="stack-m">
+                <span>VS CODE</span>
+                <progress value="100" max="100" class="progress">100%</progress>
+                <span class="procentage">100%</span>
+              </div>
+          </div>
         </div>
       </section>
       <section id="projects" class="projects">
         <div class="project-img">
-          <div><img src="static/image/projects.png" alt="projects" /></div>
+          <div>
+            <img src="static/image/projects.png" alt="projects" />
+            <span>ПРОЕКТЫ</span>
+          </div>
         </div>
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -239,8 +339,7 @@
                 <div class="projects-div-txt">
                   <span class="projects-txt portfolio">MINECRAFT LAUNCHER</span>
                   <span class="projects-txt description"
-                    >Лаунчер для сборки майнкрафт, которую собрали мы с друзьями
-                    и запустили на ней сервер. Лаунчер написан на электроне,
+                    >Лаунчер написан на электроне,
                     поддерживает авторизацию через microsoft, также в планах
                     реализовать возможность игры без лицензии.
                   </span>
@@ -260,10 +359,10 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
+      <footer>
+        <span>© 2025 Все права защищены</span>
+      </footer>
     </main>
-    <section class="mobile">
-      <div><span>Мобильная версия в разработке</span></div>
-    </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="static/js/script.js"></script>
